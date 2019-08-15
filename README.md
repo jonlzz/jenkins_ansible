@@ -1,7 +1,10 @@
 # Summary
-A customized Jenkins official docker image with Ansible 2.2.1.0 support.
+Add Ansible 2.2.1.0 support on top of the official Jenkins docker image (https://hub.docker.com/r/jenkins/jenkins)  
 
-# Dockerfile
+# DockerHub
+https://hub.docker.com/r/jonlzz/jenkins_ansible
+
+# GitHub/Dockerfile
 https://github.com/jonlzz/jenkins_ansible/blob/master/Dockerfile
 
 # Docker Usage (as user "jonlzz" )
