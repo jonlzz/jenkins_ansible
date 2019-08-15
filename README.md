@@ -7,5 +7,9 @@ https://hub.docker.com/r/jonlzz/jenkins_ansible
 # GitHub/Dockerfile
 https://github.com/jonlzz/jenkins_ansible/blob/master/Dockerfile
 
-# Docker Usage (as user "jonlzz" )
+# Usage 
+ex. run as user "jonlzz" on the host server:
+
+mkdir ~/jenkins
+
 docker run --name jenkins_master -d -p 8080:8080 -p 50000:50000 -v /home/jonlzz/jenkins:/var/jenkins_home jonlzz/jenkins_ansible
