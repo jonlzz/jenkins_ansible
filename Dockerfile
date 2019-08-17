@@ -1,6 +1,6 @@
-# Ansible over Jenkins
+# Ansible support on top of jenkins/jenkins:lts
 
-FROM jenkins/jenkins
+FROM jenkins/jenkins:lts
 
 # Install ansible
 USER root 
