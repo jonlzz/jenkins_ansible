@@ -4,6 +4,6 @@ FROM jenkins/jenkins:lts
 
 # Install ansible
 USER root 
-RUN apt update && apt install -f -y python3-pip
+RUN apt update && apt install -f -y python3-pip && apt install -f -y git && apt install -f -y sshpass
 RUN pip3 install --no-cache-dir ansible
 USER jenkins
