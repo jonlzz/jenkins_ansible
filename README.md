@@ -1,5 +1,5 @@
 # Image Summary
-A customized build with Ansible support on top of the latest official jenkins/jenkins:lts docker image (https://hub.docker.com/r/jenkins/jenkins)  
+A customized build with Ansible(2.8.5) and Terraform (0.12.10) support on top of the latest jenkins/jenkins:lts docker image.
 
 # Dockerhub 
 https://hub.docker.com/r/jonlzz/jenkins-ansible
