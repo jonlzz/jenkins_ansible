@@ -12,9 +12,9 @@ RUN apt update \
   && apt install -f -y python3-pip \
   && apt install -f -y git \
   && apt install -f -y sshpass \
-  && wget --quiet https://releases.hashicorp.com/terraform/0.12.10/terraform_0.12.10_linux_arm.zip \
-  && unzip terraform_0.12.10_linux_arm.zip \
+  && wget --quiet https://releases.hashicorp.com/terraform/0.12.10/terraform_0.12.10_linux_amd64.zip \
+  && unzip terraform_0.12.10_linux_amd64.zip \
   && mv terraform /usr/bin \
-  && rm terraform_0.12.10_linux_arm.zip \
+  && rm terraform_0.12.10_linux_amd64.zip \
   && pip3 install --no-cache-dir ansible
 USER jenkins
