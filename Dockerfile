@@ -16,5 +16,7 @@ RUN apt update \
   && unzip terraform_0.12.10_linux_amd64.zip \
   && mv terraform /usr/bin \
   && rm terraform_0.12.10_linux_amd64.zip \
-  && pip3 install --no-cache-dir ansible
+  && pip3 install --no-cache-dir ansible \
+  && pip3 install --no-cache-dir boto3
 USER jenkins
+ENV PYTHONPATH /usr/local/lib/python3.5/dist-packages
