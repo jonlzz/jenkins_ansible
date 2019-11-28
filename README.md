@@ -13,5 +13,6 @@ https://github.com/jonlzz/jenkins_ansible/blob/master/Dockerfile
 ex. to run as user "user1" on the host server with jenkins_home mounted to ~/jenkins:
 
 mkdir ~/jenkins  
+chown -R 1000 ~/jenkins
 
 docker run --name jenkins_master -d -p 8080:8080 -p 50000:50000 -v /home/user1/jenkins:/var/jenkins_home jonlzz/jenkins-ansible
